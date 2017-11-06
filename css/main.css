@@ -1,0 +1,25 @@
+.header_article {
+  padding: 20px 0 20px 0;
+  font-family: "Saira Extra Condensed";
+  font-size: 40px;
+  color: #ffffff;
+}
+.header_bgc {
+  background-color: #FFB300;
+  box-shadow: 0 -1px 20px 0px;
+}
+.nav_style_up {
+  background-color: #0097A7;
+}
+.menu {
+  background-color: #42A5F5;
+}
+#bt_save {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.task_article_style {
+  text-align: center;
+  font-family: "Saira Extra Condensed";
+  font-size: 40px;
+}
