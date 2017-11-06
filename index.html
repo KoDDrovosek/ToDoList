@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To do list</title>
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- shortcut icon -->
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="css/resert.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- css styles -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300,400,500,600,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- fonts -->
+</head>
+
+<body>
+    <header class="header_bgc">
+        <div class="container ">
+            <div class="row ">
+                <div class="center-align header_article">To do list</div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <nav class="nav_style_up col l8 offset-l2">
+                        <div class="col">
+                            <div class="nav-wrapper">
+                                <ul class="hide-on-med-and-down">
+                                    <li><a href="#modal_form" id="bt_add" class="modal-trigger"><i class="small material-icons left">add</i>Add</a></li>
+                                    <li><a href="" id="bt_clear_all" disabled><i class="small material-icons left" >clear_all</i>Clear all</a></li>
+                                    <li>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="col l8 offset-l2 menu ">
+                        <div class="input-field col l4">
+                            <select id="save_type" >
+                            <option value="" disabled selected>Choose save type</option>
+                            <option value="auto_save">Auto Save</option>
+                            <option value="click_save">Click Save</option>
+                            </select>
+                        </div>
+                        <a class="waves-effect waves-light btn-large  pink lighten-2 " id="bt_save" disabled><i class="small material-icons left">save</i>Save</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div id="need_to_do" class="col l4 m4">
+                <div class=".center-align text-blue-grey darken-3">Need to do</div>
+            </div>
+            <div id="done" class="col l4 offset-l4">
+                <div class=".center-align text-blue-grey darken-3">Done</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="task_article_style">Please enter your task</div>
+                <form>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="task_name" type="text" class="validate" required>
+                            <label for="task_name">Task name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="task_description" type="text" class="validate" required>
+                            <label for="task_description">Task description</label>
+                        </div>
+                    </div>
+                </form>
+                <a class="waves-effect waves-light btn-large" id="bt_add_task" disabled><i class="material-icons left">add</i>Add</a>
+                <a class="waves-effect waves-light btn-large" id="bt_cancel"><i class="material-icons left">cancel</i>Cancel</a>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquery-3.2.1.js"></script> -->
+</body>
+
+</html>
